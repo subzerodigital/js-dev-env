@@ -1,0 +1,23 @@
+<html>
+<head>
+
+	<!--include css-->
+	<% for (var i = 0; i < assets.css.length; i++) { %>
+		<link rel="stylesheet" type="text/css" href="/static/<%= assets.css[i] %>">
+	<% } %>
+
+</head>
+<body>
+<h1>template1</h1>
+
+<!--dynamic include component -->
+<%- include('../'+componentPath) %>
+
+<!--include the javascripts-->
+
+	<% for (var i = 0; i < assets.js.length; i++) { %>
+		<script type="text/javascript" src="/static/<%= assets.js[i] %>"></script>
+	<% } %>
+
+</body>
+</html>
