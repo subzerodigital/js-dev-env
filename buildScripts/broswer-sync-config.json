@@ -1,0 +1,5 @@
+{
+  "files": ["src/**/*.ejs"],
+  "proxy": "localhost:3000",
+  "port" : 3001
+}
