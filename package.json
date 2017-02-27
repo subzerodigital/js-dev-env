@@ -5,8 +5,8 @@
   "scripts": {
     "start": "npm-run-all --parallel security-check serve browser-sync",
     "security-check": "nsp check",
-    "prestart": "node buildScripts/hooks/startMessage.js",
-    "serve": "node buildScripts/server.js",
+    "prestart": "babel-node buildScripts/hooks/startMessage.js",
+    "serve": "babel-node buildScripts/server-es6.js",
     "share": "lt --port 3000 --subdomain subzerodigital",
     "browser-sync": "browser-sync start --config buildScripts/broswer-sync-config.json"
   },

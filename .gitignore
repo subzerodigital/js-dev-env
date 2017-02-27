@@ -38,3 +38,6 @@ jspm_packages
 
 # web storm
 .idea
+
+#build folder
+dist
