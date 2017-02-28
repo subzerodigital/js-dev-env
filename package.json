@@ -33,8 +33,9 @@
     "eslint-plugin-import": "2.0.1",
     "eslint-watch": "2.1.14",
     "express": "4.14.0",
-    "extract-text-webpack-plugin": "1.0.1",
+    "extract-text-webpack-plugin-webpack-2": "*",
     "html-webpack-plugin": "2.22.0",
+    "jquery": "^3.1.1",
     "jsdom": "9.8.0",
     "json-schema-faker": "0.3.6",
     "json-server": "0.8.22",
@@ -48,9 +49,9 @@
     "rimraf": "2.5.4",
     "style-loader": "0.13.1",
     "surge": "0.18.0",
-    "webpack": "1.13.2",
-    "webpack-dev-middleware": "1.8.4",
-    "webpack-hot-middleware": "2.13.0",
-    "webpack-md5-hash": "0.0.5"
+    "webpack": "^2.2.0",
+    "webpack-dev-middleware": "*",
+    "webpack-hot-middleware": "*",
+    "webpack-md5-hash": "*"
   }
 }

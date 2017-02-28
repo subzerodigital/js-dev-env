@@ -4,19 +4,17 @@ export default {
     debug: true,
     devtool: 'inline-source-map',
     noInfo: false,
-    entry: {
-        javascript: './dist/src/es6/cs6.js'
-    },
+    entry: path.join(__dirname, 'dist/src/es6/cs6.js'),
     target: 'web',
     output: {
-        path: path.join(__dirname, '../dist/bundle'),
-        filename: 'bundle.js'
+        path: path.join(__dirname, 'dist/bundle/'),
+        filename: 'bundle2.js'
     },
     module: {
         loaders: [{
             test: /\.js$/,
             exclude: /node_modules/,
-            loaders: ['babel']
+            loaders: ['babel-loader']
         }]
     }
 }
