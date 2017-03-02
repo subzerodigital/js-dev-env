@@ -4,13 +4,16 @@ module.exports = {
 		filename: './dist/bundle/bundle.js'
 	},
 	module: {
-		loaders: [
-			{
-				test: /\.es6$/,
-				exclude: /node_modules/,
-				loader: 'babel-loader'
-			}
-		]
+		loaders: [{
+			enforce:'pre',
+			test: /\.js$/,
+			exclude: /node_modules/,
+			loader:'jshint-loader'
+		},{
+			test: /\.es6$/,
+			exclude: /node_modules/,
+			loader: 'babel-loader'
+		}],
 	},
 	resolve: {
 		extensions: ['.js', '.es6']
