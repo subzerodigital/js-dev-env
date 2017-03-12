@@ -12,7 +12,9 @@ app.set('view engine', 'ejs');
 
 
 //static files
-app.use('/static', express.static('./src/component'));
+app.use('/src', express.static('./src'));
+app.use('/node_modules', express.static('./node_modules'));
+app.use('/root', express.static('./'));
 
 //route
 app.get('/', (req, res) => {

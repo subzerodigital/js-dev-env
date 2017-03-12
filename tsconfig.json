@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+	"module": "system",
+	"noImplicitAny": true,
+	"removeComments": true,
+	"preserveConstEnums": true,
+	"allowSyntheticDefaultImports":true,
+	//"outFile": "dist/ts/app.js",
+	"sourceMap": true
+  },
+  "include": [
+	"node_modules/@types/**/*.d.ts",
+	"src/ts/**/*",
+	"src/component/**/*"
+
+  ],
+  "exclude": [
+	"node_modules",
+	"**/*.spec.ts"
+  ]
+}

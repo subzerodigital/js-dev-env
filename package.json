@@ -16,6 +16,7 @@
     "ejs": "^2.5.6"
   },
   "devDependencies": {
+    "@types/jquery": "^2.0.41",
     "babel-cli": "6.16.0",
     "babel-core": "6.17.0",
     "babel-loader": "6.2.5",
@@ -37,6 +38,7 @@
     "html-webpack-plugin": "2.22.0",
     "jquery": "^3.1.1",
     "jsdom": "9.8.0",
+    "jshint": "^2.9.4",
     "jshint-loader": "^0.8.4",
     "json-schema-faker": "0.3.6",
     "json-server": "0.8.22",
@@ -51,6 +53,7 @@
     "strip-loader": "^0.1.2",
     "style-loader": "0.13.1",
     "surge": "0.18.0",
+    "systemjs": "^0.20.9",
     "webpack": "^2.2.0",
     "webpack-dev-middleware": "*",
     "webpack-hot-middleware": "*",

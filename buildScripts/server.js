@@ -15,6 +15,7 @@ app.set('view engine', 'ejs');
 
 //static files
 app.use('/static', express.static('./src/component'));
+app.use('/node_modules', express.static('./node_modules'));
 
 //route
 app.get('/', function (req, res) {

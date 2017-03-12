@@ -1,10 +1,10 @@
 {
   "js": [
-	"polling/js/polling.js",
-	"polling/js/polling2.js"
+	"component/polling/js/polling.js",
+	"component/polling/js/polling2.js"
   ],
   "css": [
-	"polling/css/polling.css",
-	"polling/css/polling2.css"
+	"component/polling/css/polling.css",
+	"component/polling/css/polling2.css"
   ]
 }

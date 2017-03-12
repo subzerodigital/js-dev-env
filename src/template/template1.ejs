@@ -3,7 +3,7 @@
 
 	<!--include css-->
 	<% for (var i = 0; i < assets.css.length; i++) { %>
-		<link rel="stylesheet" type="text/css" href="/static/<%= assets.css[i] %>">
+		<link rel="stylesheet" type="text/css" href="/src/<%= assets.css[i] %>">
 	<% } %>
 
 </head>
@@ -16,8 +16,15 @@
 <!--include the javascripts-->
 
 	<% for (var i = 0; i < assets.js.length; i++) { %>
-		<script type="text/javascript" src="/static/<%= assets.js[i] %>"></script>
+		<script type="text/javascript" src="/src/<%= assets.js[i] %>"></script>
 	<% } %>
+
+<!--include the system js-->
+<script type="text/javascript" src="/node_modules/systemjs/dist/system.js"></script>
+<script type="text/javascript" src="/root/system-config.js"></script>
+<script type="text/javascript">
+	System.import('ts/template')
+</script>
 
 </body>
 </html>
