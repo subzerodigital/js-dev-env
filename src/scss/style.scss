@@ -1,0 +1,9 @@
+@import "type";
+
+$blue: red;
+
+body{
+	h1 {
+		color: $blue;
+	}
+}

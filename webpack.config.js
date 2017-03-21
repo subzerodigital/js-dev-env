@@ -1,7 +1,9 @@
+var extractTextPlugin = require('extract-text-webpack-plugin');
+
 module.exports = {
 	entry: './src/es6/cs6.es6',
 	output: {
-		filename: './dist/bundle/bundle.js'
+		filename: './dist/bundle/'
 	},
 	module: {
 		loaders: [{
@@ -13,6 +15,14 @@ module.exports = {
 			test: /\.es6$/,
 			exclude: /node_modules/,
 			loader: 'babel-loader'
+		},{
+			test: /\.css$/,
+			exclude: /node_modules/,
+			loader: "style-loader!css-loader"
+		},{
+			test: /\.scss$/,
+			exclude: /node_modules/,
+			loader: "style-loader!css-loader!sass-loader"
 		}],
 	},
 	resolve: {

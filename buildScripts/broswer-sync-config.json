@@ -1,9 +1,7 @@
 {
   "files": [
-	"src/**/*.ejs",
-	"src/**/*.js",
-	"src/**/*.css",
-	"src/**/*.json"
+	"src/**/*",
+	"dist/**/*"
   ],
   "proxy": "localhost:3000",
   "port": 3001
