@@ -9,8 +9,8 @@
     "serve": "babel-node buildScripts/server-es6.js",
     "share": "lt --port 3000 --subdomain subzerodigital",
     "browser-sync": "browser-sync start --config buildScripts/broswer-sync-config.json",
-    "sass":"node-sass --source-map-embed --output src/css src/scss",
-    "sass-watch":"node-sass --watch --source-map-embed --output src/css src/scss"
+    "sass": "node-sass --source-map-embed --output src/css src/scss",
+    "sass-watch": "node-sass --watch --source-map-embed --output src/css src/scss"
   },
   "author": "Stanley Yang",
   "license": "MIT",
@@ -25,6 +25,7 @@
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-latest": "6.16.0",
     "babel-register": "6.16.3",
+    "bootstrap": "^4.0.0-alpha.6",
     "browser-sync": "^2.18.8",
     "chai": "3.5.0",
     "chalk": "1.1.3",

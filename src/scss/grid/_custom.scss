@@ -1,0 +1,12 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+$grid-breakpoints: (
+		bp0: 0,
+		bp1: 576px,
+		bp2: 768px,
+		bp3: 992px,
+		bp4: 1200px
+)
