@@ -1,16 +1,25 @@
 import path from 'path'
+import webpack from 'webpack'
 
 export default {
 	devtool: 'inline-source-map',
-	entry: path.resolve(__dirname, 'src/ts/bundle/vendor.js'),
+	entry: {
+		//vendor:path.resolve(__dirname, 'src/ts/bundle/vendor.js'),
+		vendor:['jquery','numeral'],
+		app:path.resolve(__dirname, 'src/ts/bundle/app')
+	},
 	output: {
-		path: path.resolve(__dirname, 'dist/bundle/vendor'),
-		filename: 'vendor.js'
+		path: path.resolve(__dirname, 'dist/bundle'),
+		filename: '[name].js'
 	},
 	target: 'web',
-	plugins: [],
+	plugins: [
+		new webpack.optimize.CommonsChunkPlugin({
+			name:'vendor'
+		})
+	],
 	resolve: {
-		extensions: ['.js', '.es6', '.ts']
+		extensions: ['.js', '.es6']
 	},
 	module: {
 		loaders: [{

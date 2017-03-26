@@ -1,13 +1,15 @@
-System.register([], function(exports_1, context_1) {
-    "use strict";
-    var __moduleName = context_1 && context_1.id;
-    var pollingNum;
-    return {
-        setters:[],
-        execute: function() {
-            pollingNum = 3;
-            exports_1("default",pollingNum);
-        }
+(function (factory) {
+    if (typeof module === "object" && typeof module.exports === "object") {
+        var v = factory(require, exports);
+        if (v !== undefined) module.exports = v;
     }
+    else if (typeof define === "function" && define.amd) {
+        define(["require", "exports"], factory);
+    }
+})(function (require, exports) {
+    "use strict";
+    exports.__esModule = true;
+    var pollingNum = 3;
+    exports["default"] = pollingNum;
 });
 //# sourceMappingURL=polling.js.map

@@ -1,25 +1,20 @@
-System.register(['./mod', 'jquery', '../component/polling/ts/polling'], function(exports_1, context_1) {
-    "use strict";
-    var __moduleName = context_1 && context_1.id;
-    var mod_1, jquery_1, polling_1;
-    var mod;
-    return {
-        setters:[
-            function (mod_1_1) {
-                mod_1 = mod_1_1;
-            },
-            function (jquery_1_1) {
-                jquery_1 = jquery_1_1;
-            },
-            function (polling_1_1) {
-                polling_1 = polling_1_1;
-            }],
-        execute: function() {
-            mod = new mod_1.Mod(jquery_1["default"]('.mod'));
-            mod.append();
-            console.log("haha");
-            console.log(polling_1["default"]);
-        }
+(function (factory) {
+    if (typeof module === "object" && typeof module.exports === "object") {
+        var v = factory(require, exports);
+        if (v !== undefined) module.exports = v;
     }
+    else if (typeof define === "function" && define.amd) {
+        define(["require", "exports", "./mod", "jquery", "../component/polling/ts/polling"], factory);
+    }
+})(function (require, exports) {
+    "use strict";
+    exports.__esModule = true;
+    var mod_1 = require("./mod");
+    var jquery_1 = require("jquery");
+    var polling_1 = require("../component/polling/ts/polling");
+    var mod = new mod_1.Mod(jquery_1["default"]('.mod'));
+    mod.append();
+    console.log("haha");
+    console.log(polling_1["default"]);
 });
 //# sourceMappingURL=template.js.map

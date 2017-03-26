@@ -2,7 +2,7 @@
 * our code starts here
 */
 
-
+import $ from 'jquery';
 
 //webpack css inclusion
 require('../scss/style.scss');
