@@ -2,9 +2,9 @@ import path from 'path'
 
 export default {
 	devtool: 'inline-source-map',
-	entry: path.resolve(__dirname, 'src/ts/bundle/vendor.js'),
+	entry: path.resolve(__dirname, 'src/ts/bundle-test/vendor.js'),
 	output: {
-		path: path.resolve(__dirname, 'dist/bundle/vendor'),
+		path: path.resolve(__dirname, 'dist/bundle-test/vendor'),
 		filename: 'vendor.js'
 	},
 	target: 'web',

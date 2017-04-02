@@ -9,6 +9,7 @@ $('body').append('haha');
 console.log(numeral('10,000.12'));
 console.log(app);
 
+export default app;
 
 
 

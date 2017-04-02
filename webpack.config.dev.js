@@ -4,12 +4,12 @@ import webpack from 'webpack'
 export default {
 	devtool: 'inline-source-map',
 	entry: {
-		//vendor:path.resolve(__dirname, 'src/ts/bundle/vendor.js'),
+		//vendor:path.resolve(__dirname, 'src/ts/bundle-test/vendor.js'),
 		vendor:['jquery','numeral'],
-		app:path.resolve(__dirname, 'src/ts/bundle/app')
+		app:path.resolve(__dirname, 'src/ts/bundle-test/app')
 	},
 	output: {
-		path: path.resolve(__dirname, 'dist/bundle'),
+		path: path.resolve(__dirname, 'dist/bundle-test'),
 		filename: '[name].js'
 	},
 	target: 'web',

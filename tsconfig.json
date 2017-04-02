@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-	"module": "umd",
+	"module": "system",
 	"noImplicitAny": true,
 	"removeComments": true,
 	"preserveConstEnums": true,
