@@ -1,13 +1,5 @@
-System.register([], function (exports_1, context_1) {
-    "use strict";
-    var __moduleName = context_1 && context_1.id;
-    var pollingNum;
-    return {
-        setters: [],
-        execute: function () {
-            pollingNum = 3;
-            exports_1("default", pollingNum);
-        }
-    };
-});
+"use strict";
+exports.__esModule = true;
+var pollingNum = 3;
+exports["default"] = pollingNum;
 //# sourceMappingURL=polling.js.map

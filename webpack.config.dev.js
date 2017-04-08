@@ -5,8 +5,8 @@ export default {
 	devtool: 'inline-source-map',
 	entry: {
 		//vendor:path.resolve(__dirname, 'src/ts/bundle-test/vendor.js'),
-		vendor:['jquery','numeral'],
-		app:path.resolve(__dirname, 'src/ts/bundle-test/app')
+		vendor: ['jquery'],
+		template: path.resolve(__dirname, 'src/ts/template.ts')
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist/bundle-test'),
@@ -15,7 +15,7 @@ export default {
 	target: 'web',
 	plugins: [
 		new webpack.optimize.CommonsChunkPlugin({
-			name:'vendor'
+			name: 'vendor'
 		})
 	],
 	resolve: {

@@ -1,5 +1,8 @@
-import $ from 'jquery';
-import JQuery from 'jquery';
+//amd
+import * as $ from 'jquery'
+
+//system
+//import $ from 'jquery'
 
 class Mod {
 

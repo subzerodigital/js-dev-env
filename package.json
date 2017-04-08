@@ -10,7 +10,9 @@
     "share": "lt --port 3000 --subdomain subzerodigital",
     "browser-sync": "browser-sync start --config buildScripts/broswer-sync-config.json",
     "sass": "node-sass --source-map-embed --output src/css src/scss",
-    "sass-watch": "node-sass --watch --source-map-embed --output src/css src/scss"
+    "sass-watch": "node-sass --watch --source-map-embed --output src/css src/scss",
+    "tsc-watch": "tsc -w",
+    "buildJs":"babel-node buildScripts/webpack-build.js"
   },
   "author": "Stanley Yang",
   "license": "MIT",
@@ -41,7 +43,7 @@
     "extract-text-webpack-plugin": "^2.1.0",
     "extract-text-webpack-plugin-webpack-2": "*",
     "html-webpack-plugin": "2.22.0",
-    "jquery": "^3.1.1",
+    "jquery": "^3.2.1",
     "jsdom": "9.8.0",
     "jshint": "^2.9.4",
     "jshint-loader": "^0.8.4",
@@ -56,6 +58,7 @@
     "numeral": "^1.5.3",
     "open": "0.0.5",
     "path": "^0.12.7",
+    "requirejs": "^2.3.3",
     "rimraf": "2.5.4",
     "sass-loader": "^6.0.3",
     "strip-loader": "^0.1.2",

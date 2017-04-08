@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-	"module": "system",
+	"module": "commonjs",
 	"noImplicitAny": true,
 	"removeComments": true,
 	"preserveConstEnums": true,
@@ -12,7 +12,6 @@
 	"node_modules/@types/**/*.d.ts",
 	"src/ts/**/*",
 	"src/component/**/*"
-
   ],
   "exclude": [
 	"node_modules",
