@@ -126,14 +126,12 @@ ul#flex-container2 {
 	flex-direction: row;
 	list-style: none;
 	flex-wrap: wrap;
-	align-items: flex-end;
 
 	li {
 		opacity: .5;
 		flex: 0 0 33.333%;
 		&:first-child{
 			border:1px solid blue;
-			align-self: flex-start;
 			flex-basis: 100%;
 		}
 	}
