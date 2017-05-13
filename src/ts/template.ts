@@ -8,7 +8,15 @@ import iAccount from './iAccount'
 //import $ from 'jquery'
 import pollingNum from '../component/polling/ts/polling'
 
-//$('body').append('<h1>haha</h1>');
+$('body').append('<h1>haha2</h1>');
+$('body').append('<div><a class="click-test" href="#">click</a> </div>');
+
+$('.click-test').click(function(){
+	console.log('clicked from click test');
+});
+
+
+
 const mod = new Mod($('.mod'));
 mod.append();
 

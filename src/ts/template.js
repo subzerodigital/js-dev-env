@@ -3,6 +3,11 @@ exports.__esModule = true;
 var mod_1 = require("./mod");
 var $ = require("jquery");
 var polling_1 = require("../component/polling/ts/polling");
+$('body').append('<h1>haha2</h1>');
+$('body').append('<div><a class="click-test" href="#">click</a> </div>');
+$('.click-test').click(function () {
+    console.log('clicked from click test');
+});
 var mod = new mod_1.Mod($('.mod'));
 mod.append();
 console.log("haha");
