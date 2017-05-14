@@ -10,6 +10,7 @@ module.exports = function (config) {
 		},
 		reporters: ['progress', 'karma-typescript', 'coverage'],
 		browsers: ['PhantomJS'],
+
 		/*
 		browsers: ['desktop','mobile'],
 		customLaunchers: {
