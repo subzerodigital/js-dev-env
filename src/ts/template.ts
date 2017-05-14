@@ -1,4 +1,4 @@
-import {Mod} from './mod'
+import Mod from './mod'
 //amd
 import * as $ from 'jquery'
 
@@ -14,15 +14,6 @@ $('body').append('<div><a class="click-test" href="#">click</a> </div>');
 $('.click-test').click(function(){
 	console.log('clicked from click test');
 });
-
-
-
-const mod = new Mod($('.mod'));
-mod.append();
-
-console.log("haha");
-console.log(pollingNum);
-
 
 class Contact {
 
@@ -54,7 +45,6 @@ const account = {
 
 
 let {name: myName, city: myCity, state: myState, zip: myZip} = account;
-console.log(myName, myCity);
 
 const myAccount: iAccount = {
 	street: 'Nurery',
@@ -62,7 +52,6 @@ const myAccount: iAccount = {
 	zip: 123
 };
 
-console.log(myAccount);
 
 const myFunction = ({zip: zpi, city: city, street: street}: iAccount) => {
 	console.log(street, city, zpi);

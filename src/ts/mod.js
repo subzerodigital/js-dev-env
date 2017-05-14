@@ -1,13 +1,17 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
+//amd
+var $ = require("jquery");
+//system
 var Mod = (function () {
-    function Mod($element) {
-        this.$element = $element;
+    function Mod(selector) {
+        this.$element = $(selector);
+        this.phone = 123;
+        this.append();
     }
     Mod.prototype.append = function () {
-        this.$element.append('<h1>I\'m appended</h1>');
+        this.$element.append('<a href="#" class="mod">I\'m appended</a>');
     };
     return Mod;
 }());
-exports.Mod = Mod;
-//# sourceMappingURL=mod.js.map
+exports.default = Mod;

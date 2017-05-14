@@ -2,22 +2,25 @@
 import * as $ from 'jquery'
 
 //system
-//import $ from 'jquery'
 
 class Mod {
 
 	$element:JQuery;
-	constructor($element:JQuery){
-		this.$element = $element;
+	phone: number;
+
+	constructor(selector:string){
+		this.$element = $(selector);
+		this.phone = 123;
+		this.append();
 	}
 
 	append():void {
-		this.$element.append('<h1>I\'m appended</h1>');
+		this.$element.append('<a href="#" class="mod">I\'m appended</a>');
 	}
 
 }
 
-export {Mod}
+export default Mod;
 
 
 

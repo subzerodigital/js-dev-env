@@ -6,10 +6,23 @@ module.exports = function (config) {
 			{pattern: 'src/**/*.spec.ts'}
 		],
 		preprocessors: {
-			'**/*.ts': ['karma-typescript']
+			'**/*.ts': ['karma-typescript', 'coverage'],
 		},
-		reporters: ['progress', 'karma-typescript'],
+		reporters: ['progress', 'karma-typescript', 'coverage'],
 		browsers: ['PhantomJS'],
+		/*
+		browsers: ['desktop','mobile'],
+		customLaunchers: {
+			mobile: {
+				base: 'Chrome',
+				flags: ['--window-size=320,600']
+			},
+			desktop: {
+				base: 'Chrome',
+				flags: ['--window-size=900,600']
+			}
+		}
+		*/
 	});
 };
 

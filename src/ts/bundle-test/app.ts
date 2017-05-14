@@ -1,5 +1,5 @@
-import $ from 'jquery';
-import numeral from 'numeral'
+import * as $ from 'jquery';
+import * as numeral from 'numeral'
 
 const app = {
 	name: 'my-value-haha'
