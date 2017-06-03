@@ -1,19 +1,16 @@
 import Mod from './mod'
 //amd
 import * as $ from 'jquery'
-
 import iAccount from './iAccount'
+import TestClass from './test-class'
 
-//system
-//import $ from 'jquery'
-import pollingNum from '../component/polling/ts/polling'
 
+let tc = new TestClass('body');
+
+/*
 $('body').append('<h1>haha2</h1>');
 $('body').append('<div><a class="click-test" href="#">click</a> </div>');
-
-$('.click-test').click(function(){
-	console.log('clicked from click test');
-});
+*/
 
 class Contact {
 
@@ -61,6 +58,8 @@ myFunction(myAccount);
 
 const names = ['1', '2', '3'];
 const [mine, your, his] = names;
+
+export  default TestClass;
 
 
 

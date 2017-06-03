@@ -4,9 +4,13 @@
 	"noImplicitAny": true,
 	"removeComments": true,
 	"preserveConstEnums": true,
+	"moduleResolution": "node",
 	"allowSyntheticDefaultImports":true,
 	//"outFile": "dist/ts/app.js",
-	"sourceMap": true
+	"sourceMap": true,
+	"paths": {
+	  "jquery": ["node_modules/jquery/dist/jquery"]
+	}
   },
   "include": [
 	"node_modules/@types/**/*.d.ts",

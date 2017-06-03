@@ -1,11 +1,7 @@
 "use strict";
 exports.__esModule = true;
-var $ = require("jquery");
-$('body').append('<h1>haha2</h1>');
-$('body').append('<div><a class="click-test" href="#">click</a> </div>');
-$('.click-test').click(function () {
-    console.log('clicked from click test');
-});
+var test_class_1 = require("./test-class");
+var tc = new test_class_1["default"]('body');
 var Contact = (function () {
     function Contact(name, phone, email) {
         if (name === void 0) { name = 'stan'; }
@@ -41,4 +37,5 @@ var myFunction = function (_a) {
 myFunction(myAccount);
 var names = ['1', '2', '3'];
 var mine = names[0], your = names[1], his = names[2];
+exports["default"] = test_class_1["default"];
 //# sourceMappingURL=template.js.map

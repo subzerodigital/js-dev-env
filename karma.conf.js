@@ -1,26 +1,29 @@
 module.exports = function (config) {
 	config.set({
-		frameworks: ['jasmine', 'karma-typescript'],
+		frameworks: ['jasmine', 'karma-typescript', 'jquery-3.1.1'],
 		files: [
-			{pattern: 'src/**/*.ts'},
-			{pattern: 'src/**/*.spec.ts'}
+			{pattern: 'src/ts/test/**/*.ts'},
+			{pattern: 'src/ts/test/**/*.spec.ts'}
 		],
 		preprocessors: {
-			'**/*.ts': ['karma-typescript', 'coverage'],
+			'src/ts/test/**/*.ts': ['karma-typescript', 'coverage'],
 		},
 		reporters: ['progress', 'karma-typescript', 'coverage'],
-		browsers: ['PhantomJS'],
-
+		browsers: ['Chrome']
 		/*
-		browsers: ['desktop','mobile'],
-		customLaunchers: {
-			mobile: {
-				base: 'Chrome',
-				flags: ['--window-size=320,600']
-			},
-			desktop: {
-				base: 'Chrome',
-				flags: ['--window-size=900,600']
+		karmaTypescriptConfig: {
+			compilerOptions: {
+				"module": "commonjs",
+				'noImplicitAny': true,
+				'removeComments': true,
+				'preserveConstEnums': true,
+				'moduleResolution': "node",
+				"allowSyntheticDefaultImports": true,
+				"sourceMap": true,
+				"baseUrl": "./",
+				"paths": {
+					"jquery": ["node_modules/jquery/dist/jquery"]
+				}
 			}
 		}
 		*/

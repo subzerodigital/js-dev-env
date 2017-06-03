@@ -1,8 +1,6 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-//amd
+exports.__esModule = true;
 var $ = require("jquery");
-//system
 var Mod = (function () {
     function Mod(selector) {
         this.$element = $(selector);
@@ -14,4 +12,5 @@ var Mod = (function () {
     };
     return Mod;
 }());
-exports.default = Mod;
+exports["default"] = Mod;
+//# sourceMappingURL=mod.js.map
