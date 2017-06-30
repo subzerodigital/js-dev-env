@@ -1,16 +1,18 @@
 import Mod from './mod'
 //amd
-import * as $ from 'jquery'
+
+import 'jquery'
 import iAccount from './iAccount'
-import TestClass from './test-class'
 
-
-let tc = new TestClass('body');
+import 'tether';
+import 'bootstrap';
 
 /*
-$('body').append('<h1>haha2</h1>');
-$('body').append('<div><a class="click-test" href="#">click</a> </div>');
-*/
+ $('body').append('<h1>haha2</h1>');
+ $('body').append('<div><a class="click-test" href="#">click</a> </div>');
+ */
+
+$('#myModal').modal();
 
 class Contact {
 
@@ -58,8 +60,6 @@ myFunction(myAccount);
 
 const names = ['1', '2', '3'];
 const [mine, your, his] = names;
-
-export  default TestClass;
 
 
 

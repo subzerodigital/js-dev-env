@@ -1,7 +1,9 @@
 "use strict";
 exports.__esModule = true;
-var test_class_1 = require("./test-class");
-var tc = new test_class_1["default"]('body');
+require("jquery");
+require("tether");
+require("bootstrap");
+$('#myModal').modal();
 var Contact = (function () {
     function Contact(name, phone, email) {
         if (name === void 0) { name = 'stan'; }
@@ -37,5 +39,4 @@ var myFunction = function (_a) {
 myFunction(myAccount);
 var names = ['1', '2', '3'];
 var mine = names[0], your = names[1], his = names[2];
-exports["default"] = test_class_1["default"];
 //# sourceMappingURL=template.js.map

@@ -10,6 +10,10 @@ webpack(webpackConfig).run((err,stats) => {
 		console.log(chalk.red(err));
 		return 1;
 	}
-	return 0;
+
+	console.log(stats.toString({
+		chunks: false,  // Makes the build much quieter
+		colors: true    // Shows colors in the console
+	}));
 
 });

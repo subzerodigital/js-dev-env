@@ -7,10 +7,7 @@
 	"moduleResolution": "node",
 	"allowSyntheticDefaultImports":true,
 	//"outFile": "dist/ts/app.js",
-	"sourceMap": true,
-	"paths": {
-	  "jquery": ["node_modules/jquery/dist/jquery"]
-	}
+	"sourceMap": true
   },
   "include": [
 	"node_modules/@types/**/*.d.ts",

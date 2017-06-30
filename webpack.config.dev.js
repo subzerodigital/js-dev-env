@@ -4,8 +4,7 @@ import webpack from 'webpack'
 export default {
 	devtool: 'inline-source-map',
 	entry: {
-		//vendor:path.resolve(__dirname, 'src/ts/bundle-test/vendor.js'),
-		vendor: ['jquery'],
+		vendor: ['jquery', 'bootstrap'],
 		template: path.resolve(__dirname, 'src/ts/template.ts')
 	},
 	output: {
@@ -16,10 +15,25 @@ export default {
 	plugins: [
 		new webpack.optimize.CommonsChunkPlugin({
 			name: 'vendor'
+		}),
+		new webpack.ProvidePlugin({
+			jQuery: 'jquery',
+			$: 'jquery',
+			jquery: 'jquery',
+			"window.Tether": 'tether',
+			Tether: 'tether'
+			//Util: path.resolve(__dirname, 'node_modules/bootstrap/js/src/util'),
+			//"window.Util": path.resolve(__dirname, 'node_modules/bootstrap/js/src/util')
+		}),
+
+		new webpack.optimize.UglifyJsPlugin({
+			comments: false
 		})
 	],
 	resolve: {
-		extensions: ['.js', '.es6']
+		extensions: ['.js', '.es6'],
+		alias: {
+		}
 	},
 	module: {
 		loaders: [{
