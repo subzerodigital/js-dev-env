@@ -2,8 +2,11 @@
 exports.__esModule = true;
 require("jquery");
 require("tether");
-require("bootstrap");
-$('#myModal').modal();
+require("util");
+require("modal");
+$('.myButton').click(function () {
+    $('#myModal').modal({ focus: true });
+});
 var Contact = (function () {
     function Contact(name, phone, email) {
         if (name === void 0) { name = 'stan'; }
@@ -39,4 +42,4 @@ var myFunction = function (_a) {
 myFunction(myAccount);
 var names = ['1', '2', '3'];
 var mine = names[0], your = names[1], his = names[2];
-//# sourceMappingURL=template.js.map
+//# sourceMappingURL=main.js.map

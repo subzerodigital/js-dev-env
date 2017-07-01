@@ -5,14 +5,17 @@ import 'jquery'
 import iAccount from './iAccount'
 
 import 'tether';
-import 'bootstrap';
+import 'util';
+import 'modal';
 
 /*
  $('body').append('<h1>haha2</h1>');
  $('body').append('<div><a class="click-test" href="#">click</a> </div>');
  */
 
-$('#myModal').modal();
+$('.myButton').click(() => {
+	$('#myModal').modal({focus: true});
+});
 
 class Contact {
 
